@@ -7,16 +7,18 @@
 <meta name="plugin-version" content="vim7.4_v2">
 <meta name="syntax" content="none">
 <meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
-<meta name="colorscheme" content="darkblue">
+<meta name="colorscheme" content="koehler">
 <style type="text/css">
 <!--
-pre { white-space: pre-wrap; font-family: monospace; color: #a8a8a8; background-color: #000000; }
-body { font-family: monospace; color: #a8a8a8; background-color: #000000; }
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #000000; }
+body { font-family: monospace; color: #ffffff; background-color: #000000; }
 * { font-size: 1em; }
-.LineNr { color: #00ff00; }
-.Comment { color: #c00000; }
-.Constant { color: #ff40ff; }
-.WarningMsg { color: #ff6060; }
+.CursorLineNr { color: #ffff00; font-weight: bold; }
+.LineNr { color: #008080; }
+.IncSearch { color: #000000; background-color: #ffffff; }
+.WildMenu { color: #000000; background-color: #ffff00; padding-bottom: 1px; }
+.VisualNOS { font-weight: bold; text-decoration: underline; }
+.Error { color: #008080; background-color: #000000; padding-bottom: 1px; }
 -->
 .center { margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px; }
 </style>
@@ -52,41 +54,56 @@ if ('onhashchange' in window) {
 </head>
 <body class="center" onload='JumpToLine();'>
 <pre id='vimCodeElement'>
-<span id="L1" class="LineNr"> 1 </span><span class="Constant">~ Sérgio Basbaum ~</span>
+<span id="L1" class="LineNr"> 1 </span><span class="IncSearch">~ Sérgio Basbaum ~</span>
 <span id="L2" class="LineNr"> 2 </span>
-<span id="L3" class="LineNr"> 3 </span><span class="WarningMsg">~~ tracks ~~</span>
+<span id="L3" class="LineNr"> 3 </span><span class="IncSearch">~~ tracks ~~</span>
 <span id="L4" class="LineNr"> 4 </span>
-<span id="L5" class="LineNr"> 5 </span>choro:
-<span id="L6" class="LineNr"> 6 </span>  <a href="https://soundcloud.com/sergiobasbaum/vento-na-pitangueira">https://soundcloud.com/sergiobasbaum/vento-na-pitangueira</a>
-<span id="L7" class="LineNr"> 7 </span>  <a href="https://soundcloud.com/sergiobasbaum/biovni-demo_frevo">https://soundcloud.com/sergiobasbaum/biovni-demo_frevo</a>
-<span id="L8" class="LineNr"> 8 </span>
-<span id="L9" class="LineNr"> 9 </span>sonic art:
-<span id="L10" class="LineNr">10 </span>  <a href="https://soundcloud.com/sergiobasbaum/futebol-arte">https://soundcloud.com/sergiobasbaum/futebol-arte</a>
-<span id="L11" class="LineNr">11 </span>
-<span id="L12" class="LineNr">12 </span>jazz brasileiro:
-<span id="L13" class="LineNr">13 </span>  <a href="https://soundcloud.com/sergiobasbaum/01-bai-o-d-todos-os-santos">https://soundcloud.com/sergiobasbaum/01-bai-o-d-todos-os-santos</a>
-<span id="L14" class="LineNr">14 </span>  <a href="https://soundcloud.com/sergiobasbaum/03-dois-coracoes">https://soundcloud.com/sergiobasbaum/03-dois-coracoes</a>
-<span id="L15" class="LineNr">15 </span>  <a href="https://soundcloud.com/sergiobasbaum/06-caleidosc-pio-keren-no-forr">https://soundcloud.com/sergiobasbaum/06-caleidosc-pio-keren-no-forr</a>
-<span id="L16" class="LineNr">16 </span>  <a href="https://soundcloud.com/sergiobasbaum/05-can-o-pra-deixar-correr-o">https://soundcloud.com/sergiobasbaum/05-can-o-pra-deixar-correr-o</a>
-<span id="L17" class="LineNr">17 </span>  <a href="https://soundcloud.com/sergiobasbaum/03-rosa-margarida">https://soundcloud.com/sergiobasbaum/03-rosa-margarida</a>
-<span id="L18" class="LineNr">18 </span>  <a href="https://soundcloud.com/sergiobasbaum/sampa-midnight">https://soundcloud.com/sergiobasbaum/sampa-midnight</a>
-<span id="L19" class="LineNr">19 </span>  <a href="https://soundcloud.com/sergiobasbaum/vou-te-pedir-1">https://soundcloud.com/sergiobasbaum/vou-te-pedir-1</a>
-<span id="L20" class="LineNr">20 </span>
-<span id="L21" class="LineNr">21 </span><span class="WarningMsg">~~ about Basbaum ~~</span>
+<span id="L5" class="LineNr"> 5 </span><span class="Error">8)</span> vento na pitangueira (choro)
+<span id="L6" class="LineNr"> 6 </span>  <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/vento-na-pitangueira">https://soundcloud.com/sergiobasbaum/vento-na-pitangueira</a></span>
+<span id="L7" class="LineNr"> 7 </span><span class="VisualNOS">      this is a fantastic bandolim performance</span>
+<span id="L8" class="LineNr"> 8 </span><span class="VisualNOS">      an exquisite choro, traditional and harmonious</span>
+<span id="L9" class="LineNr"> 9 </span><span class="VisualNOS">      hear this, h++</span>
+<span id="L10" class="LineNr">10 </span><span class="Error">9)</span> Bio-Objeto Não identificado (demo, frevo-choro)
+<span id="L11" class="LineNr">11 </span>  <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/biovni-demo_frevo">https://soundcloud.com/sergiobasbaum/biovni-demo_frevo</a></span>
+<span id="L12" class="LineNr">12 </span><span class="VisualNOS">      another masterpiece as 8), h++</span>
+<span id="L13" class="LineNr">13 </span><span class="Error">10)</span> sonic art:
+<span id="L14" class="LineNr">14 </span>  <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/futebol-arte">https://soundcloud.com/sergiobasbaum/futebol-arte</a></span>
+<span id="L15" class="LineNr">15 </span><span class="VisualNOS">      soccer narrative, r++</span>
+<span id="L16" class="LineNr">16 </span><span class="Error">6)</span> <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/sampa-midnight">https://soundcloud.com/sergiobasbaum/sampa-midnight</a></span>
+<span id="L17" class="LineNr">17 </span><span class="VisualNOS">      Suzana Salles and /\/\-* Tom Zé *-/\/\ (vocals); Basbaum (elec. guitar);</span>
+<span id="L18" class="LineNr">18 </span><span class="VisualNOS">      Luiz Chagas, (slide guitar); Paulo Lepetit (bass);</span>
+<span id="L19" class="LineNr">19 </span><span class="VisualNOS">      Banjamin Taubkin (kb); Paulo Campos (percussion);</span>
+<span id="L20" class="LineNr">20 </span><span class="VisualNOS">      André Magalhães (drums and producer). h++</span>
+<span id="L21" class="LineNr">21 </span>
 <span id="L22" class="LineNr">22 </span>
-<span id="L23" class="LineNr">23 </span>researcher, artist, technonaut, skillful performer and composer
-<span id="L24" class="LineNr">24 </span>
-<span id="L25" class="LineNr">25 </span>
-<span id="L26" class="LineNr">26 </span><span class="Comment">~~~ questions ~~~</span>
-<span id="L27" class="LineNr">27 </span>
-<span id="L28" class="LineNr">28 </span>you mentioned having some sonic-art pieces.
-<span id="L29" class="LineNr">29 </span>Which pieces do you like the most among them?
-<span id="L30" class="LineNr">30 </span>
-<span id="L31" class="LineNr">31 </span>do you write? draw?
+<span id="L23" class="LineNr">23 </span>Brazilian jazz:
+<span id="L24" class="LineNr">24 </span><span class="Error">1)</span> <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/01-bai-o-d-todos-os-santos">https://soundcloud.com/sergiobasbaum/01-bai-o-d-todos-os-santos</a></span>
+<span id="L25" class="LineNr">25 </span><span class="Error">2)</span> <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/03-dois-coracoes">https://soundcloud.com/sergiobasbaum/03-dois-coracoes</a></span>
+<span id="L26" class="LineNr">26 </span><span class="Error">3)</span> <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/06-caleidosc-pio-keren-no-forr">https://soundcloud.com/sergiobasbaum/06-caleidosc-pio-keren-no-forr</a></span>
+<span id="L27" class="LineNr">27 </span><span class="Error">4)</span> <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/05-can-o-pra-deixar-correr-o">https://soundcloud.com/sergiobasbaum/05-can-o-pra-deixar-correr-o</a></span>
+<span id="L28" class="LineNr">28 </span><span class="Error">5)</span> <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/03-rosa-margarida">https://soundcloud.com/sergiobasbaum/03-rosa-margarida</a></span>
+<span id="L29" class="LineNr">29 </span><span class="Error">7)</span> <span class="WildMenu"><a href="https://soundcloud.com/sergiobasbaum/vou-te-pedir-1">https://soundcloud.com/sergiobasbaum/vou-te-pedir-1</a></span>
+<span id="L30" class="LineNr">30 </span><span class="VisualNOS">      i have to hear these more.</span>
+<span id="L31" class="LineNr">31 </span><span class="VisualNOS">      my culture is not enough to understand them maybe.</span>
 <span id="L32" class="LineNr">32 </span>
-<span id="L33" class="LineNr">33 </span>would you care to record more of your bandolim performance?
-<span id="L34" class="LineNr">34 </span>
-<span id="L35" class="LineNr">35 </span><span class="LineNr">:::</span>
+<span id="L33" class="LineNr">33 </span>
+<span id="L34" class="LineNr">34 </span><span class="IncSearch">~~ about Basbaum ~~</span>
+<span id="L35" class="LineNr">35 </span>
+<span id="L36" class="LineNr">36 </span>researcher, artist, technonaut, skillful performer and composer
+<span id="L37" class="LineNr">37 </span>
+<span id="L38" class="LineNr">38 </span>
+<span id="L39" class="LineNr">39 </span><span class="IncSearch">~~~ questions ~~~</span>
+<span id="L40" class="LineNr">40 </span>
+<span id="L41" class="LineNr">41 </span>you mentioned having some sonic-art pieces.
+<span id="L42" class="LineNr">42 </span>Which pieces do you like the most among them?
+<span id="L43" class="LineNr">43 </span>
+<span id="L44" class="LineNr">44 </span>do you write? draw?
+<span id="L45" class="LineNr">45 </span>
+<span id="L46" class="LineNr">46 </span>would you care to record more of your bandolim performance?
+<span id="L47" class="LineNr">47 </span>
+<span id="L48" class="LineNr">48 </span>will you write the waltz-choro?
+<span id="L49" class="LineNr">49 </span>
+<span id="L50" class="LineNr">50 </span><span class="CursorLineNr">:::</span>
 </pre>
 </body>
 </html>

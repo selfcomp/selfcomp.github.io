@@ -7,14 +7,14 @@
 <meta name="plugin-version" content="vim7.4_v2">
 <meta name="syntax" content="none">
 <meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
-<meta name="colorscheme" content="darkblue">
+<meta name="colorscheme" content="morning">
 <style type="text/css">
 <!--
-pre { white-space: pre-wrap; font-family: monospace; color: #a8a8a8; background-color: #000000; }
-body { font-family: monospace; color: #a8a8a8; background-color: #000000; }
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #c0c0c0; }
+body { font-family: monospace; color: #000000; background-color: #c0c0c0; }
 * { font-size: 1em; }
-.LineNr { color: #00ff00; }
-.Constant { color: #ff40ff; }
+.DiffText { background-color: #ff6060; padding-bottom: 1px; font-weight: bold; }
+.LineNr { color: #af5f00; }
 .Error { color: #ffffff; background-color: #ff6060; padding-bottom: 1px; }
 -->
 .center { margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px; }
@@ -51,7 +51,7 @@ if ('onhashchange' in window) {
 </head>
 <body class="center" onload='JumpToLine();'>
 <pre id='vimCodeElement'>
-<span id="L1" class="LineNr"> 1 </span><span class="Constant">~ readme ~</span>
+<span id="L1" class="LineNr"> 1 </span><span class="DiffText">~ readme ~</span>
 <span id="L2" class="LineNr"> 2 </span>
 <span id="L3" class="LineNr"> 3 </span>these files / pages
 <span id="L4" class="LineNr"> 4 </span>and are written in a wiki-like format in Vim,
@@ -64,7 +64,7 @@ if ('onhashchange' in window) {
 <span id="L11" class="LineNr">11 </span>  <a href="https://github.com/selfcomp/selfcomp.github.io">https://github.com/selfcomp/selfcomp.github.io</a>
 <span id="L12" class="LineNr">12 </span>  <span class="Error"><a href="./about.html">about</a></span>
 <span id="L13" class="LineNr">13 </span>
-<span id="L14" class="LineNr">14 </span>:::
+<span id="L14" class="LineNr">14 </span><span class="LineNr">:::</span>
 </pre>
 </body>
 </html>

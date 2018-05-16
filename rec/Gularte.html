@@ -7,16 +7,17 @@
 <meta name="plugin-version" content="vim7.4_v2">
 <meta name="syntax" content="none">
 <meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
-<meta name="colorscheme" content="darkblue">
+<meta name="colorscheme" content="koehler">
 <style type="text/css">
 <!--
-pre { white-space: pre-wrap; font-family: monospace; color: #a8a8a8; background-color: #000000; }
-body { font-family: monospace; color: #a8a8a8; background-color: #000000; }
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #000000; }
+body { font-family: monospace; color: #ffffff; background-color: #000000; }
 * { font-size: 1em; }
-.LineNr { color: #00ff00; }
-.Comment { color: #c00000; }
-.Constant { color: #ff40ff; }
-.WarningMsg { color: #ff6060; }
+.CursorLineNr { color: #ffff00; font-weight: bold; }
+.LineNr { color: #008080; }
+.IncSearch { color: #000000; background-color: #ffffff; }
+.WildMenu { color: #000000; background-color: #ffff00; padding-bottom: 1px; }
+.VisualNOS { font-weight: bold; text-decoration: underline; }
 -->
 .center { margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px; }
 </style>
@@ -52,40 +53,36 @@ if ('onhashchange' in window) {
 </head>
 <body class="center" onload='JumpToLine();'>
 <pre id='vimCodeElement'>
-<span id="L1" class="LineNr"> 1 </span><span class="Constant">~ Fernando Gularte ~</span>
+<span id="L1" class="LineNr"> 1 </span><span class="IncSearch">~ Fernando Gularte ~</span>
 <span id="L2" class="LineNr"> 2 </span>
-<span id="L3" class="LineNr"> 3 </span><span class="WarningMsg">~~ tracks ~~</span>
+<span id="L3" class="LineNr"> 3 </span><span class="IncSearch">~~ tracks ~~</span>
 <span id="L4" class="LineNr"> 4 </span>
-<span id="L5" class="LineNr"> 5 </span>abounds in reverbs and delays, as ketchup (and mustard).
-<span id="L6" class="LineNr"> 6 </span>These three little gems are Webern-like masterpieces of
-<span id="L7" class="LineNr"> 7 </span>sincere exploitation
-<span id="L8" class="LineNr"> 8 </span>
-<span id="L9" class="LineNr"> 9 </span>the rhythmic crescendo of this trine sequence
-<span id="L10" class="LineNr">10 </span>has the climax on 3) with the monstrous and profane binary beat
-<span id="L11" class="LineNr">11 </span>
-<span id="L12" class="LineNr">12 </span>Enjoy this quasi-3min sonic caprice:
-<span id="L13" class="LineNr">13 </span>
-<span id="L14" class="LineNr">14 </span>1) <a href="./data/FernandoGularte/Intro-Next.mp3">Intro-Next</a>
+<span id="L5" class="LineNr"> 5 </span>self/auto-compilation:
+<span id="L6" class="LineNr"> 6 </span>  <span class="WildMenu"><a href="https://archive.org/details/gularte">https://archive.org/details/gularte</a></span>
+<span id="L7" class="LineNr"> 7 </span><span class="VisualNOS">      abounds in reverbs and delays, as ketchup (and mustard).</span>
+<span id="L8" class="LineNr"> 8 </span><span class="VisualNOS">      These three little gems are Webern-like masterpieces of</span>
+<span id="L9" class="LineNr"> 9 </span><span class="VisualNOS">      sincere exploitation</span>
+<span id="L10" class="LineNr">10 </span><span class="VisualNOS">      </span>
+<span id="L11" class="LineNr">11 </span><span class="VisualNOS">      the rhythmic crescendo of this trine sequence</span>
+<span id="L12" class="LineNr">12 </span><span class="VisualNOS">      has the climax on 3) with the monstrous and profane binary beat</span>
+<span id="L13" class="LineNr">13 </span><span class="VisualNOS">      </span>
+<span id="L14" class="LineNr">14 </span><span class="VisualNOS">      enjoy this quasi-3min sonic caprice</span>
 <span id="L15" class="LineNr">15 </span>
-<span id="L16" class="LineNr">16 </span>2) <a href="./data/FernandoGularte/Second.mp3">Second</a>
-<span id="L17" class="LineNr">17 </span>
-<span id="L18" class="LineNr">18 </span>3) <a href="./data/FernandoGularte/Dr.Jekyll.mp3">Dr Jekyll</a>
-<span id="L19" class="LineNr">19 </span>
-<span id="L20" class="LineNr">20 </span>
-<span id="L21" class="LineNr">21 </span><span class="WarningMsg">~~ about Gularte ~~</span>
-<span id="L22" class="LineNr">22 </span>
-<span id="L23" class="LineNr">23 </span>Mathematician and social entrepreneur,
-<span id="L24" class="LineNr">24 </span>thinks and acts now around scientific journals,
-<span id="L25" class="LineNr">25 </span>personal, community and institutional partnerships,
-<span id="L26" class="LineNr">26 </span>and what else he adds here
-<span id="L27" class="LineNr">27 </span>
-<span id="L28" class="LineNr">28 </span>
-<span id="L29" class="LineNr">29 </span><span class="Comment">~~~ questions ~~~</span>
-<span id="L30" class="LineNr">30 </span>
-<span id="L31" class="LineNr">31 </span>can you share other audio pieces?
-<span id="L32" class="LineNr">32 </span>Do you write? draw?
-<span id="L33" class="LineNr">33 </span>
-<span id="L34" class="LineNr">34 </span><span class="LineNr">:::</span>
+<span id="L16" class="LineNr">16 </span>
+<span id="L17" class="LineNr">17 </span><span class="IncSearch">~~ about Gularte ~~</span>
+<span id="L18" class="LineNr">18 </span>
+<span id="L19" class="LineNr">19 </span>mathematician, social entrepreneur,
+<span id="L20" class="LineNr">20 </span>thinks and acts now around scientific journals,
+<span id="L21" class="LineNr">21 </span>personal, community and institutional partnerships,
+<span id="L22" class="LineNr">22 </span>and what else he adds here
+<span id="L23" class="LineNr">23 </span>
+<span id="L24" class="LineNr">24 </span>
+<span id="L25" class="LineNr">25 </span><span class="IncSearch">~~~ questions ~~~</span>
+<span id="L26" class="LineNr">26 </span>
+<span id="L27" class="LineNr">27 </span>can you share other audio pieces?
+<span id="L28" class="LineNr">28 </span>Do you write? draw?
+<span id="L29" class="LineNr">29 </span>
+<span id="L30" class="LineNr">30 </span><span class="CursorLineNr">:::</span>
 </pre>
 </body>
 </html>
