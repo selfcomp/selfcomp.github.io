@@ -13,12 +13,10 @@
 pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #c0c0c0; }
 body { font-family: monospace; color: #000000; background-color: #c0c0c0; }
 * { font-size: 1em; }
+.DiffText { background-color: #ff6060; padding-bottom: 1px; font-weight: bold; }
 .LineNr { color: #af5f00; }
-.CursorLineNr { color: #af5f00; font-weight: bold; }
-.StatusLineTerm { color: #ffffff; background-color: #008000; padding-bottom: 1px; font-weight: bold; }
-.VisualNOS { font-weight: bold; text-decoration: underline; }
+.Comment { color: #0000c0; }
 -->
-.center { margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px; }
 </style>
 
 <script type='text/javascript'>
@@ -52,7 +50,7 @@ if ('onhashchange' in window) {
 </head>
 <body class="center" onload='JumpToLine();'>
 <pre id='vimCodeElement'>
-<span id="L1" class="LineNr"> 1 </span><span class="StatusLineTerm">~ the selfcomp record (or media) label (or directory) ~</span>
+<span id="L1" class="LineNr"> 1 </span><span class="DiffText">~ the selfcomp record (or media) label (or directory) ~</span>
 <span id="L2" class="LineNr"> 2 </span>
 <span id="L3" class="LineNr"> 3 </span>selfcomp is dedicated to self-compilations,
 <span id="L4" class="LineNr"> 4 </span>i.e. selections of musical / sonic pieces
@@ -69,7 +67,7 @@ if ('onhashchange' in window) {
 <span id="L15" class="LineNr">15 </span>including the record authors.
 <span id="L16" class="LineNr">16 </span>
 <span id="L17" class="LineNr">17 </span>
-<span id="L18" class="LineNr">18 </span><span class="VisualNOS">~~~ donations ~~~</span>
+<span id="L18" class="LineNr">18 </span><span class="Comment">~~~ donations ~~~</span>
 <span id="L19" class="LineNr">19 </span>
 <span id="L20" class="LineNr">20 </span>if someone wants to donate something,
 <span id="L21" class="LineNr">21 </span>i might accept, thanks for reading this
@@ -84,7 +82,7 @@ if ('onhashchange' in window) {
 <span id="L30" class="LineNr">30 </span>
 <span id="L31" class="LineNr">31 </span><a href="http://github.com/ttm">http://github.com/ttm</a>
 <span id="L32" class="LineNr">32 </span>
-<span id="L33" class="LineNr">33 </span><span class="CursorLineNr">:::</span>
+<span id="L33" class="LineNr">33 </span><span class="LineNr">:::</span>
 </pre>
 </body>
 </html>
