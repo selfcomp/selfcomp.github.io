@@ -1,3 +1,4 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <!doctype html>
 <html>
   <head>
@@ -5,11 +6,11 @@
     <title>{% block title %}{% endblock %} ::: {{ title }}</title>
     {% endblock %}
   </head>
-  <body class="center">
+  <body class="center" onload='JumpToLine();'>
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
       {% block footer %}
-      &copy; Pulbic Domain
+      &copy; Public Domain
       {% endblock %}
     </div>
   </body>

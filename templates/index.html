@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  .center { margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px; }
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #000000; }
+body { font-family: monospace; color: #ffffff; background-color: #000000; }
+* { font-size: 1em; }
+.Error { color: #ffffff; background-color: #ff6060; padding-bottom: 1px; }
+.DiffChange { background-color: #c000c0; padding-bottom: 1px; }
+.LineNr { color: #ffff00; }
+.Constant { color: #ff40ff; }
+.Comment { color: #00ffff; }
+.WarningMsg { color: #ffd7d7; }
+</style>
+<script type='text/javascript'>
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+</script>
+{% endblock %}
+{% block content %}
+  <pre>{% for line in lines: -%}
+<span id="L{{loop.index}}" class="LineNr">  {{ loop.index }} </span> <span class="Constant">{{ line }}</span><br>
+    {%- endfor %}
+  </pre>
+{% endblock %}
+
