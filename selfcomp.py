@@ -12,13 +12,19 @@ for f in files:
     if os.path.isfile(f_):
         ff = open(f_).readlines()
         ff = [i.replace("\n", '') for i in ff]
-        ff = [re.sub(r"(./[a-zA-Z/]*)", r'<a href="\1">\1</a>', i) for i in ff]
+        ff = [re.sub(r"(:.+:)", r'<span class="Error">\1</span>', i, flags=re.M) for i in ff]
+        ff = [re.sub(r"( [ativos]+[,$])", r'<span class="WarningMsg">\1</span>', i, flags=re.M) for i in ff]
+        ff = [re.sub(r"( [hr+]+[,$])", r'<span class="WarningMsg">\1</span>', i, flags=re.M) for i in ff]
+        ff = [re.sub(r"(\./[a-zA-Z/0-9áéíóú]*)", r'<a href="\1.html">\1</a>', i) for i in ff]
+        ff = [re.sub(r"(\~+[ ()\-a-zA-Z0-9\./]*\~+)", r'<span class="Comment">\1</span>', i) for i in ff]
         df[f]=ff
+
+linenos = ['{: 3d}'.format(i+1) for i in range(999)]
 
 
 @app.route("/")
 def index():
-    return render_template('index.html', title='selfcomp, auto-compilations directory', lines=df['index'])
+    return render_template('index.html', title='selfcomp, auto-compilations directory', lines=df['index'], ln=linenos)
 
 # @app.route("/about/")
 # def index():

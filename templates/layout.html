@@ -3,16 +3,60 @@
 <html>
   <head>
     {% block head %}
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>{% block title %}{% endblock %} ::: {{ title }}</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim7.4_v2">
+<meta name="syntax" content="none">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="obaluaie">
+  <style type="text/css">
+    .important { color: #336699; }
+  .center { margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px; }
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #000000; }
+a {color: #bb0000}
+body { font-family: monospace; color: #ffffff; background-color: #000000; }
+* { font-size: 1em; }
+.Error { color: #bf5f00; background-color: #002020; padding-bottom: 1px; }
+.DiffChange { background-color: #c000c0; padding-bottom: 1px; }
+.LineNr { color: #ffff00; }
+.Constant { color: #ff40ff; }
+.Comment { color: #00ffff; }
+.WarningMsg { color: #00a700; }
+-->
+</style>
+<script type='text/javascript'>
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+</script>
     {% endblock %}
   </head>
   <body class="center" onload='JumpToLine();'>
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
       {% block footer %}
-      &copy; Public Domain
+      ∴
       {% endblock %}
     </div>
   </body>
 </html>
-
