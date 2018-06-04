@@ -66,10 +66,10 @@ def screencast():
 def releases():
     return render_template('index.html', title='Releases', lines=df['releases'], ln=linenos)
 
-# @app.route("/collections/")
-# def index():
-#     return render_template('collections.html')
-# 
+@app.route("/collections/")
+def collections():
+    return render_template('index.html', title='Collections', lines=df['collections'], ln=linenos)
+
 @app.route("/rec/<person>/")
 def rec(person):
     return render_template('index.html', title='rec '+person, lines=df['rec/'+person], ln=linenos)
