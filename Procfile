@@ -1,1 +1,1 @@
-web: python selfcomp.py
+web gunicorn manage:app
