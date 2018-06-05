@@ -8,14 +8,14 @@ files = os.listdir(scwiki_path)
 files = [i for i in files if 'html' not in i]
 files = [i for i in files if not i.endswith('.swp')]
 
-recwiki_path = '/home/renato/.vim/pack/prv/opt/wiki/aux/wiki/selfcomp/rec'
+recwiki_path = scwiki_path + '/rec'
 files_ = os.listdir(recwiki_path)
 files_ = ['rec/'+i for i in files_ if 'html' not in i]
 files_ = [i for i in files_ if not i.endswith('.swp')]
 
 files += files_
 
-relwiki_path = '/home/renato/.vim/pack/prv/opt/wiki/aux/wiki/selfcomp/rel'
+relwiki_path = scwiki_path + '/rel'
 files_ = os.listdir(relwiki_path)
 files_ = ['rel/'+i for i in files_ if 'html' not in i]
 files_ = [i for i in files_ if not i.endswith('.swp')]
