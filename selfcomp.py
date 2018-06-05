@@ -3,7 +3,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 import os, re
-scwiki_path = '/home/renato/.vim/pack/prv/opt/wiki/aux/wiki/selfcomp/'
+scwiki_path = './static/wiki/'
 files = os.listdir(scwiki_path)
 files = [i for i in files if 'html' not in i]
 files = [i for i in files if not i.endswith('.swp')]

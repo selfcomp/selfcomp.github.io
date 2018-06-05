@@ -1,0 +1,61 @@
+~ Glerm Soares ~
+
+~~ tracks ~~
+
+~~ of the :second: self-compilation ~~
+
+https://pjreddie.com/darknet/yolo
+  $ git clone https://github.com/pjreddie/darknet
+  $ cd darknet
+  $ make
+  $ wget https://pjreddie.com/media/files/yolov3.weights
+
+  $ wget https://scontent.fqsc1-1.fna.fbcdn.net/v/t1.0-9/14202587_10154591976194430_5667988242322618668_n.jpg?_nc_cat=0&_nc_eui2=AeHExAwMv6fCHrdGpbZ0WnapNvoCSN3uZR4ZwA70-Af14as7Km08QTZh6Vg0GkQG-dmyfQkcqIdN6BUOxG8IAB123EohlccHyu-W3NtQ0cyTGQ&oh=4265de9cfdc50d1bb566ce32ea6d3339&oe=5B846BEB data/img.jpg
+  $ ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
+  $ ./darknet detect cfg/yolov3.cfg yolov3.weights data/img.jpg
+  $ wget http://s2.glbimg.com/RYs9wpk7XtUjqLz5dhtINWfBRJ0=/smart/e.glbimg.com/og/ed/f/original/2017/06/30/banco3.jpg
+
+
+~~~ of the :first: self-compilation ~~~
+
+h++:
+1) Kernel Yupana Tupantapuia GPL3
+  https://soundcloud.com/organismo/kernel-yupana-tupantapuia-gpl3
+    rhythm rhythm rhythm!
+    and it gets better with the text
+    mythologically relevant
+2) A Horta do Jacú
+  https://soundcloud.com/organismo/a-horta-do-jacu
+    ellaborated with speech and then patterns,
+    then mix them both talking about patterns in living and learning
+3) Эпиграф
+  https://soundcloud.com/organismo/epigrafe
+    a very nice piano piece
+4) Em busca da sentença perdida
+  https://soundcloud.com/organismo/boleto
+    subaquatic sounds, anoying high hiss goes away. aquatic level waves,
+    something gets higher, ends. Beautiful.
+5) Motor Da PosHistoria
+  https://soundcloud.com/organismo/motor-da-poshistoria
+    preety nice and pleasant interaction between the piano and electronics.
+6) Fantasmas Piás Da Torre
+  https://soundcloud.com/organismo/fantasmas-pias-da-torre
+7) Linearidade do Discurso
+  https://soundcloud.com/organismo/linearidade-do-discurso
+
+need to hear again and comment 6) and 7).
+
+
+~~ about Glerm ~~
+
+composer, researcher, university professor, an antenna for those who are
+trying stuff
+
+
+~~~ questions ~~~
+
+what means do you use to express yourself?
+
+do you consider selfcomp an MSST endeavor?
+
+:::
