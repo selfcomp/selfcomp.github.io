@@ -38,12 +38,12 @@ i.e. collections of pieces made by the authors themselves
 
 ~~~ about selfcomp ~~~
 
-see ./rel/001 and ../index
+see ../rel/001 and ../index
 
 and ../screencast if you want a video explanation
 
 
-~~~ about release ./002 ~~~
+~~~ about release ../rel/002 ~~~
 
 aka. the 'minimalist release',
 ../rel/002 has multimedia selfcomps:
@@ -71,7 +71,7 @@ given the nice materials sent by selfcompers
 
 ~~ updates ~~
 
-materials sent and being organized for selfcomp ./rel/002
+materials sent and being organized for selfcomp ../rel/002
 Seg Jun  4 02:45:09 -03 2018
 
 reviewing to post second release.
