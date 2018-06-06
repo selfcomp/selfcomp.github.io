@@ -78,3 +78,11 @@ def rec(person):
 def rel(release):
     return render_template('index.html', title='rel '+release, lines=df['rel/'+release], ln=linenos)
 
+from flask_frozen import Freezer
+
+app.run(debug=True)
+
+freezer = Freezer(app)
+
+freezer.freeze()
+
