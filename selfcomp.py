@@ -42,6 +42,10 @@ linenos = ['{: 3d}'.format(i+1) for i in range(999)]
 def index():
     return render_template('index.html', title='Index', lines=df['index'], ln=linenos)
 
+@app.route("/index/")
+def index2():
+    return render_template('index.html', title='Index', lines=df['index'], ln=linenos)
+
 @app.route("/rf/")
 def rf():
     return render_template('index.html', title='me?', lines=df['rf'], ln=linenos)
