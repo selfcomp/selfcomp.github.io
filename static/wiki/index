@@ -1,4 +1,4 @@
-~ selfcomp v002.3b ~
+~ selfcomp v002.4b ~
 
 :ativos: Audio, Text, Image, Video, quasi/semi-finished (Ok), Surprise/other
 
@@ -41,13 +41,18 @@ Ter Mai 15 22:01:26 -03 2018
 
 ~~ ongoing ~~
 
-:release ? ./rel/002 -3:
+:release ? ./rel/003 -3:
 date: ??
-./rec/Sue
+
+./rec/Tognon
+
+./rec/Bantu
+
+./rec/Alexandrisky
 
 ./rec/Sampaio
 
-./rec/Bez
+./rec/Sue
 
 ./rec/Pataca
 
@@ -58,6 +63,8 @@ date: ??
 ./rec/Moisés
 
 ./rec/Mantovani
+
+./rec/Bez
 
 ./rec/deborahAntunes
 
@@ -197,6 +204,8 @@ date: ??
 ./rec/Svab
 
 ./rec/Lappicy
+
+./rec/Manse
 
 ./rec/Zampronha
 
