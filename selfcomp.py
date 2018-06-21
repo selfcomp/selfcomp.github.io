@@ -31,7 +31,8 @@ for f in files:
         ff = [re.sub(r"(:.+:)", r'<span class="Error">\1</span>', i, flags=re.M) for i in ff]
         ff = [re.sub(r"( [ativos]+[,$])", r'<span class="WarningMsg">\1</span>', i, flags=re.M) for i in ff]
         ff = [re.sub(r"( [hr+]+[,$])", r'<span class="WarningMsg">\1</span>', i, flags=re.M) for i in ff]
-        ff = [re.sub(r"\.(/[a-zA-Z/0-9áéíóúÝà]*)", r'<a href="\1/">.\1</a>', i) for i in ff]
+        ff = [re.sub(r"\.(/[a-zA-Z/0-9áéíóúÝàã]*)", r'<a href="\1/">.\1</a>', i) for i in ff]
+        ff = [re.sub(r"(https*://.*)", r'<a href="\1/" target="blank" >\1</a>', i) for i in ff]
         ff = [re.sub(r"(\~+[ ()\-a-zA-Z0-9\./\:]*\~+)", r'<span class="Comment">\1</span>', i) for i in ff]
         df[f]=ff
 
